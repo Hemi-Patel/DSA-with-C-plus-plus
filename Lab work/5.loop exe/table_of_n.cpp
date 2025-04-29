@@ -6,7 +6,7 @@ main()
 	cout<<"Enter Number:";
 	cin>>n;
 	cout<<endl;
-	cout<<"Table of "<<n<<"is:"<<endl<<endl;
+	cout<<"Table of "<<n<<" is:"<<endl<<endl;
 	for(i=1;i<=10;i++)
 	{
 		ans=n*i;
