@@ -18,8 +18,7 @@ main()
 		cout<<real_num<<" Number is Palindrome";
 	}
 	else{
-		cout<<real_num<<" Number is not Palindrome";
-		
+		cout<<real_num<<" Number is not Palindrome";	
 	}
 	
 }

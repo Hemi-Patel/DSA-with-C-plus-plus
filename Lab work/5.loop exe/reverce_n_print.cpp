@@ -2,9 +2,14 @@
 using namespace std;
 main()
 {
-	int n;
+	int i,n;
 	cout<<"Enter Number:";
 	cin>>n;
-	
+	cout<<endl;
+	for(i=n;i>=1;i--)
+	{
+		cout<<i<<" ";
+		
+	}
 	
 }
