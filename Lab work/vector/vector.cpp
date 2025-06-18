@@ -11,9 +11,9 @@ void showElement(){
 		cout<<n.at(i)<<endl;
 	}
 }
-void deleteElement(){
-	n.pop_back();
-	cout<<"After delete Last element From Vector"<<endl;
+void deleteElement(int index)	{
+	n.erase(n.begin()+index);
+	cout<<"After delete element at "<<index<<" index From Vector"<<endl;
 	for(int i=0;i<n.size();i++){
 		cout<<n.at(i)<<endl;
 	}
@@ -37,7 +37,7 @@ main(){
 		cout<<"----------------------------------------------"<<endl;
 		cout<<"1.Add element in vector"<<endl;
 		cout<<"2.Show all elements of vector"<<endl;
-		cout<<"3.Delete element in vector"<<endl;
+		cout<<"3.Delete element at Specific Index in vector"<<endl;
 		cout<<"4.Find Size of Vector"<<endl;
 		cout<<"5.Insert Element at Specific Index"<<endl;
 		cout<<"6.Find Element at Given index in vector"<<endl;
@@ -63,7 +63,9 @@ main(){
 				showElement();
 				break;
 			case 3:
-				deleteElement();
+				cout<<"Enter Index to delete Element in vector:";
+				cin>>index;
+				deleteElement(index);
 				break;
 			case 4:
 				sizeOfVector();
